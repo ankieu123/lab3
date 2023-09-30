@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký sinh viên</title>
+    <script src="Bai1.js"></script>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>Mã Sinh Viên</td>
+                <td>
+                    <label for="maSV">Mã sinh viên:</label>
+                    <input type="text" id="maSV" name="maSV" required>
+
+                </td>
+            </tr>
+            <tr>
+                <td> Tên Sinh Viên</td>
+                <td>
+                    <label for="hoTen">Họ tên:</label>
+                    <input type="text" id="hoTen" name="hoTen" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Tuoi</td>
+                <td>
+                    <label for="tuoi">Tuổi:</label>
+                    <input type="number" id="tuoi" name="tuoi" required>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="chuyenNganh">Chuyên ngành:</label>
+                    <input type="radio" id="heThong" name="chuyenNganh" value="heThong" required>
+                    <label for="heThong">Hệ thống</label>
+                    <input type="radio" id="phanMem" name="chuyenNganh" value="phanMem" required>
+                    <label for="phanMem">Phần mềm</label>
+                    <input type="radio" id="mangMayTinh" name="chuyenNganh" value="mangMayTinh" required>
+                    <label for="mangMayTinh">Mạng máy tính</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="validateAndProcessForm()">Đăng ký</button>
+                </td>
+            </tr>
+
+
+        </table>
+        <div id="result"></div>
+    </form>
+
+
+
+</body>
+</html>

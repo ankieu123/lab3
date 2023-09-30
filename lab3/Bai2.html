@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Thông tin giao hàng</title>
+    <script src="Bai2.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thông tin giao hàng</h1>
+    <form>
+        <table>
+            <tr>
+                <th>Tên</th>
+                <td>
+                    <input type="text" id="name" required>
+                    <span id="name-error" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Địa chỉ</th>
+                <td>
+                    <input type="text" id="address" required>
+                    <span id="address-error" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Tỉnh/Thành phố</th>
+                <td>
+                    <input type="text" id="city" required>
+                    <span id="city-error" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Quận/Huyện</th>
+                <td>
+                    <input type="text" id="district" required>
+                    <span id="district-error" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Phường/Xã</th>
+                <td>
+                    <input type="text" id="ward" required>
+                    <span id="ward-error" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Số điện thoại</th>
+                <td>
+                    <input type="text" id="phoneNumber" required>
+                    <span id="phoneNumber-error" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>Giao hàng tại</th>
+                <td>
+                    <button type="button" onclick="handleButtonClick('office')">Văn phòng</button>
+                    <button type="button" onclick="handleButtonClick('home')">Nhà riêng</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button type="button" onclick="saveInformation()">Lưu</button>
+    </form>
+
+
+</body>
+</html>
